@@ -1,0 +1,51 @@
+# Unreal Engine 5 Gitignore
+# -----------------------
+
+# Project-specific folders
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Metadata and workspace folders
+.vscode/
+.idea/
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# File-specific ignores
+*.pyc
+*.log
+*.tmp
+*.bak
+*.swp
+
+# macOS specific
+.DS_Store
+
+# Crash reports
+Saved/Crashes/
+
+# Build Artefacts
+Binaries/Win64/
+Binaries/Android/
+Binaries/IOS/
+Binaries/Linux/
+Binaries/Mac/
+
+# Ignore UBT Generated files
+Source/**/gen_cpp.txt
+Source/**/gen_h.txt
+
+# Local configuration files
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultEditorSettings.ini
+Config/DefaultEngineIni.bak
+Config/DefaultGameIni.bak
+Config/DefaultInputIni.bak
