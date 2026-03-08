@@ -56,10 +56,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "SoundMod",
-			"Enabled": true
-		},
-		{
 			"Name": "SoundUtilities",
 			"Enabled": true
 		},
