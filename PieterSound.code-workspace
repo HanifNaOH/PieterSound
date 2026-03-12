@@ -10,7 +10,7 @@
 		}
 	],
 	"settings": {
-		"js/ts.tsc.autoDetect": "off",
+		"typescript.tsc.autoDetect": "off",
 		"npm.autoDetect": "off",
 		"terminal.integrated.env.windows": {
 			"PATH": "E:\\Backup-Dev\\UE\\UE_5.7\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.412\\win-x64;${env:PATH}",
@@ -1284,6 +1284,143 @@
 				"visualizerFile": "E:\\Backup-Dev\\UE\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
 					"D:\\build\\++UE5\\Sync": "E:\\Backup-Dev\\UE\\UE_5.7"
+				}
+			},
+			{
+				"name": "PieterSound Oculus (Debug) Launch",
+				"request": "launch",
+				"preLaunchTask": "PieterSound Android Debug Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.percanvas.PieterSound",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"E:/Backup-Dev/Unreal/PieterSound/Binaries/Android/PieterSound_Symbols_v1/PieterSound-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"E:/Backup-Dev/UE/UE_5.7/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "PieterSound Oculus (DebugGame) Launch",
+				"request": "launch",
+				"preLaunchTask": "PieterSound Android DebugGame Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.percanvas.PieterSound",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"E:/Backup-Dev/Unreal/PieterSound/Binaries/Android/PieterSound_Symbols_v1/PieterSound-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"E:/Backup-Dev/UE/UE_5.7/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "PieterSound Oculus (Development) Launch",
+				"request": "launch",
+				"preLaunchTask": "PieterSound Android Development Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.percanvas.PieterSound",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"E:/Backup-Dev/Unreal/PieterSound/Binaries/Android/PieterSound_Symbols_v1/PieterSound-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"E:/Backup-Dev/UE/UE_5.7/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "PieterSound Oculus (Development) Attach",
+				"request": "attach",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.percanvas.PieterSound",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"E:/Backup-Dev/Unreal/PieterSound/Binaries/Android/PieterSound_Symbols_v1/PieterSound-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"E:/Backup-Dev/UE/UE_5.7/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "PieterSound Oculus (Test) Launch",
+				"request": "launch",
+				"preLaunchTask": "PieterSound Android Test Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.percanvas.PieterSound",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"E:/Backup-Dev/Unreal/PieterSound/Binaries/Android/PieterSound_Symbols_v1/PieterSound-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"E:/Backup-Dev/UE/UE_5.7/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "PieterSound Oculus (Shipping) Launch",
+				"request": "launch",
+				"preLaunchTask": "PieterSound Android Shipping Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.percanvas.PieterSound",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"E:/Backup-Dev/Unreal/PieterSound/Binaries/Android/PieterSound_Symbols_v1/PieterSound-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"E:/Backup-Dev/UE/UE_5.7/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
 				}
 			},
 			{
